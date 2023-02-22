@@ -1,9 +1,26 @@
 ### FT_CONTAINERS
 #
 ##### LINKS
-##### > [FT_CONTAINERS SUBJECT](https://cdn.intra.42.fr/pdf/pdf/61426/en.subject.pdf)
-##### > [CPLUSPLUS WEBSITE](https://cplusplus.com/reference/)
-##### > [CPP_REFERENCE WEBSITE](https://en.cppreference.com/w/cpp)
+##### > [ SUBJECT ](https://cdn.intra.42.fr/pdf/pdf/61426/en.subject.pdf)
+
+##### > [ CPP_REFERENCE ](https://en.cppreference.com/w/cpp)
+
+##### > [ CPLUSPLUS ](https://cplusplus.com/reference/) (DEPRECATED)
+
+##### > [ PDF CONTENEURS STL ](http://tvaira.free.fr/dev/cours/cours-conteneurs-stl.pdf)
+
+##### > [ PEER CLASS FEV 2023 ](https://drive.google.com/file/d/1Bh6B71Z614HO2763h0G1UR2snmrUbSuI/view?usp=sharing)
+
+##### > [ DIAPO INTRODUCTION OLD VERSION ](https://00101010.fr/ft_containers/1) (DEPRECATED)
+
+##### > [ WHAT IS AN ALLOCATOR? ](https://medium.com/@vgasparyan1995/what-is-an-allocator-c8df15a93ed)
+
+##### > [ SFINAE ](https://www.fluentcpp.com/2018/05/15/make-sfinae-pretty-1-what-value-sfinae-brings-to-code/)
+
+##### > [ SFINAE AND ENABLE IF ](https://eli.thegreenplace.net/2014/sfinae-and-enable_if/)
+
+##### > [ INTRODUCTION TO ALGORITHMS (1313 pages pdf) ](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf)
+
 
 #
 ##### TODO
@@ -38,7 +55,7 @@
 #
 ##### TESTERS
 ```
-(maybe deprecated)
+(possibly deprecated)
 
 https://github.com/mli42/containers_test
 
