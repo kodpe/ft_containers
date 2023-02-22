@@ -48,9 +48,12 @@
 - [ ] std::pair
 - [ ] std::make_pair
 - [ ] Makefile
-- [ ] main vector
-- [ ] main stack
-- [ ] main map
+- [ ] sub_main vector
+- [ ] sub_main stack
+- [ ] sub_main map
+- [ ] compare STL perf my / std (gprof ?)
+- [ ] ft::<container>
+- [ ] main.cpp
 
 #
 ##### TESTERS
