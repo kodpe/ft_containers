@@ -24,36 +24,36 @@
 
 #
 ##### TODO
-- [ ] namespace ft
-- [ ] std::allocator
-- [ ] friend
-- [ ] vector
+- [ ] `namespace ft`
+- [ ] `std::allocator`
+- [ ] `friend`
+- [ ] `vector`
   - [ ] -
   - [ ] -
   - [ ] -
-- [ ] stack (use vector)
+- [ ] `stack` (use vector)
   - [ ] -
   - [ ] -
   - [ ] -
-- [ ] map
-  - [ ] std::map::value_compare (use friend)
+- [ ] `map`
+  - [ ] `std::map::value_compare` (use friend)
   - [ ] -
   - [ ] -
-- [ ] std::iterator_traits
-- [ ] std::reverse_iterator
-- [ ] std::enable_if (SFINAE)
-- [ ] std::is_integral
-- [ ] std::equal
-- [ ] std::lexicographical_compare
-- [ ] std::pair
-- [ ] std::make_pair
+- [ ] `std::iterator_traits`
+- [ ] `std::reverse_iterator`
+- [ ] `std::enable_if` (SFINAE)
+- [ ] `std::is_integral`
+- [ ] `std::equal`
+- [ ] `std::lexicographical_compare`
+- [ ] `std::pair`
+- [ ] `std::make_pair`
 - [ ] Makefile
 - [ ] sub_main vector
 - [ ] sub_main stack
 - [ ] sub_main map
 - [ ] compare STL perf my / std (gprof ?)
-- [ ] ft::<container>
-- [ ] main.cpp
+- [ ] `ft::<container>`
+- [ ] main.cpp (subject main + my own tests)
 
 #
 ##### TESTERS
