@@ -15,33 +15,29 @@
 
 #include <iostream>
 #include <exception>
+#include <iterator>
+#include <algorithm>
 
-namespace ft
-{
-	template< class T, class Allocaor = std::allocator<T> >
-	class vector
-	{
-		private:
-
-		typedef T				value_type;
-		typedef Allocator		allocator_type;
-		typedef	std::size_t		size_type;
-		typedef	std::ptrdiff_t	difference_type;
-
-		typedef typename Allocator::reference 		reference;
-		typedef typename Allocator::const_reference const_reference;
-
-		typedef typename Allocator::pointer			pointer;
-		typedef typename Allocator::const_pointer	const_pointer;
-
-		// TODO ITERATOR
-		iterator;
-		const_iterator;
-
-		reverse_iterator;
-		const_reverse_iterator;
-
+namespace ft {
+	template< class T, class Allocator = std::allocator<T> >
+	class vector {
 		public:
+
+		// types
+		typedef T										value_type;
+		typedef Allocator								allocator_type;
+		typedef	std::size_t								size_type;
+		typedef	std::ptrdiff_t							difference_type;
+		typedef typename Allocator::reference 			reference;
+		typedef typename Allocator::const_reference 	const_reference;
+		typedef typename Allocator::pointer				pointer;
+		typedef typename Allocator::const_pointer		const_pointer;
+		typedef ft::normal_iterator<pointer>			iterator;
+		typedef ft::normal_iterator<const_pointer>		const_iterator;
+		typedef ft::reverse_iterator<iterator>			reverse_iterator;
+		typedef ft::reverse_iterator<const_iterator>	const_reverse_iterator;
+
+		// construct/destroy/copy/assign/get_allocator
 								vector();
 		explicit				vector( const Allocator& alloc );
 		explicit				vector( size_type count,
@@ -58,19 +54,7 @@ namespace ft
 		void					assign( InputIt first, InputIt last);
 		allocator_type			get_allocator() const;
 
-		/***** ACCESS ELEMENTS *****/
-		reference				at( size_type pos );
-		const_reference			at( size_type pos ) const;
-		reference				operator[]( size_type pos );
-		const_reference			operator[]( size_type pos ) const;
-		reference				front();
-		const_reference			front() const;
-		reference				back();
-		const_reference			back() const;
-		T*						data();
-		const T*				data() const;
-
-		/***** ITERATORS *****/
+		// iterators
 		iterator				begin();
 		const_iterator			begin() const;
 		iterator				end();
@@ -80,14 +64,28 @@ namespace ft
 		reverse_iterator		rend();
 		const_reverse_iterator	rend() const;
 
-		/***** CAPACITY *****/
+		// capacity
 		bool					empty() const;
 		size_type				size() const;
 		size_type				max_size() const;
 		void					reserve( size_type new_cap );
 		size_type				capacity() const;
 
-		/***** MODIFIERS *****/
+		// element access
+		reference				at( size_type pos );
+		const_reference			at( size_type pos ) const;
+		reference				operator[]( size_type pos );
+		const_reference			operator[]( size_type pos ) const;
+		reference				front();
+		const_reference			front() const;
+		reference				back();
+		const_reference			back() const;
+
+		// data access
+		T*						data();
+		const T*				data() const;
+
+		// modifiers
 		void					clear();
 		iterator				insert( const_iterator pos, const T& value );
 		iterator				insert( const_iterator pos, size_type count, const T& value );
@@ -101,36 +99,33 @@ namespace ft
 		void					swap( vector& other );
 	};
 
-
-	/***** NON-MEMBER FUNCTIONS *****/
+	template< class T, class Alloc >
+	bool	operator==	( const ft::vector<T, Alloc>& lhs,
+						  const ft::vector<T, Alloc>& rhs );
 
 	template< class T, class Alloc >
-	bool	operator==( const std::vector<T, Alloc>& lhs,
-						const std::vector<T, Alloc>& rhs );
+	bool	operator!=	( const ft::vector<T, Alloc>& lhs,
+						  const ft::vector<T, Alloc>& rhs );
 
 	template< class T, class Alloc >
-	bool	operator!=( const std::vector<T, Alloc>& lhs,
-						const std::vector<T, Alloc>& rhs );
+	bool	operator<	( const ft::vector<T, Alloc>& lhs,
+						  const ft::vector<T, Alloc>& rhs );
 
 	template< class T, class Alloc >
-	bool	operator< ( const std::vector<T, Alloc>& lhs,
-						const std::vector<T, Alloc>& rhs );
+	bool	operator<=	( const ft::vector<T, Alloc>& lhs,
+						  const ft::vector<T, Alloc>& rhs );
 
 	template< class T, class Alloc >
-	bool	operator<=( const std::vector<T, Alloc>& lhs,
-						const std::vector<T, Alloc>& rhs );
+	bool	operator>	( const ft::vector<T, Alloc>& lhs,
+						  const ft::vector<T, Alloc>& rhs );
 
 	template< class T, class Alloc >
-	bool	operator> ( const std::vector<T, Alloc>& lhs,
-						const std::vector<T, Alloc>& rhs );
+	bool	operator>=	( const ft::vector<T, Alloc>& lhs,
+						  const ft::vector<T, Alloc>& rhs );
 
 	template< class T, class Alloc >
-	bool	operator>=( const std::vector<T, Alloc>& lhs,
-						const std::vector<T, Alloc>& rhs );
-
-	template< class T, class Alloc >
-	void	swap( std::vector<T, Alloc>& lhs,
-				  std::vector<T, Alloc>& rhs );
+	void	swap( ft::vector<T, Alloc>& lhs,
+				  ft::vector<T, Alloc>& rhs );
 
 } /* namespace ft */
 
