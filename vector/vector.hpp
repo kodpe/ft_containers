@@ -127,6 +127,10 @@ namespace ft {
 	void	swap( ft::vector<T, Alloc>& lhs,
 				  ft::vector<T, Alloc>& rhs );
 
+	/***** DEFINITION *****/
+
+	// todo ...
+
 } /* namespace ft */
 
 #endif /* FT_VECTOR_TEMPLATE_HPP */
