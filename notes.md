@@ -27,9 +27,40 @@
 - [ ] `std::allocator`
 - [ ] `friend`
 - [ ] `vector`
-  - [ ] -
-  - [ ] -
-  - [ ] -
+  - [ ] constructor
+  - [ ] copy constructor
+  - [ ] destructor
+  - [ ] operator=
+  - [ ] assign
+  - [ ] get_allocator
+  - [ ] Element access (public methods)
+    - [ ] at
+    - [ ] operator[]
+    - [ ] front
+    - [ ] back
+    - [ ] data
+  - [ ] Iterators
+    - [ ] begin
+    - [ ] end
+    - [ ] rbegin
+    - [ ] rend
+  - [ ] Capacity
+    - [ ] empty
+    - [ ] size
+    - [ ] max_size
+    - [ ] reserve
+    - [ ] capacity
+  - [ ]  Modifiers
+    - [ ] clear
+    - [ ] insert
+    - [ ] erase
+    - [ ] push_back
+    - [ ] pop_back
+    - [ ] resize
+    - [ ] swap
+  - [ ]  
+
+
 - [ ] `stack` (use vector)
   - [ ] -
   - [ ] -
